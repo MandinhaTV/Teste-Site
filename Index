@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Descrição">
+      <link type="text/css" rel="stylesheet" href="style.css">
+      <title>Bruna Mands</title>
+   </head>
+   <script>
+      function showModal(){
+          var element = document.getElementById("modal");
+          element.classList.add("show-modal");
+      }
+      
+      function hideModal(){
+          var element = document.getElementById("modal");
+          element.classList.remove("show-modal");
+      }
+   </script>    
+   <body class="body">
+      
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="https://i.postimg.cc/Qtc1DZGg/logo.png" alt="Logo">
+        <button class="cabecalho-botao" onclick="showModal()">Baixe agora</button>
+    </header>
+       
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-esquerda">
+                <img class="conteudo-imagem" src="https://i.postimg.cc/Qtc1DZGg/logo.png" alt="Logo">
+                <h1 class="conteudo-titulo">E-BOOK GRATUITO</h1>
+                <h2 class="conteudo-descricao">Domine os 3 pilares do tráfego pago e alcance de uma vez por toda sua liberdade financeira</h2>
+                
+                <button class="conteudo-botao" onclick="showModal()">Baixe agora!</button>
+            
+                <section class="modal-geral">
+                <div class="modal" id="modal">
+         <div class="modal-content">
+            <span class="xbuton" onclick="hideModal()">&times;</span>
+            <div class="title-modal">
+               <h1>Preencha o formulario para baixar grátis.</h1>
+            </div>
+            <form name="contact" method="POST" data-netlify="true" class="formContact" Target="_blank">
+               <fieldset class="input-form">
+                  <p>
+                     <label for="name">Nome: <input type="text" name="name" id="name" placeholder="Nome Completo" required/></label>
+                  </p>
+                  <p>
+                     <label for="email">E-mail: <input type="email" name="email" id="email" placeholder="Digite seu email" required/></label>
+                  </p>
+                  <p>
+                     <label for="phone">Telefone: <input type="tel" name="phone" id="phone" placeholder="(xx) xxxxx-xxxx" required></label>
+                  </p>
+                   <input type="submit" value="Enviar" class="butonform" href="https://docs.google.com/uc?export=download&id=1FRdzLLz0wWf79UcHJ8ZhfFiKAU0eqgCf" >
+               </fieldset>
+                <div class="form-descricao">
+                    <h3 class="form-descricao-texto">Ao se inscrever você concorda com o tratamento de seus dados pessoais para receber comunicações e e-mails da empresa. Seus dados apenas serão utilizados para fins de comunicação e marketing. Você pode cancelar o recebimento desses e-mails quando quiser. Para mais informações confira nosso Aviso de Privacidade.</h3>
+                </div>
+            </form>
+         </div>
+      </div>
+                </section>
+            </div>
+            <div class="conteudo-direita">
+                <img class="conteudo-imagem2" src="https://i.postimg.cc/XvVhJtcR/eu.png" alt="Logo">
+            </div>
+        </section>          
+    </main>
+       
+    <footer class="rodape">  
+        <h2 class="rodape-direitos">Magic estúdio criativo 2022© Todos os direitos reservados.</h2>
+        <h3 class="rodape-texto">Esse site não é afiliado do Facebook ou a qualquer antidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e monstrar todos as povas do produto e usamos resultados reais. Nós não vendemos o seu email ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se a vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sexta das 09h00 as 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</h3>
+    </footer>       
+   </body>
+</html>
