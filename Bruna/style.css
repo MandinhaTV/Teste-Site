@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.cabecalho-imagem{
+    height: 75px;
+}
+.cabecalho-botao{
+    background: rgb(255, 138, 175);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 15px #000000;
+    border: none;
+}
+.conteudo{
+    border-top: 0.6px solid #000000;    
+    
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.conteudo-imagem{
+    height: 300px;
+}
+.conteudo-titulo{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px;
+}
+.conteudo-descricao{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+}
+.conteudo-botao{
+    background: rgb(255, 138, 175);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 15px #000000;
+}
+.conteudo-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.conteudo-imagem2{
+    height: 450px;
+   
+}
+.rodape{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.rodape-direitos{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+.rodape-texto{
+    text-align: justify;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.modal-geral{
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.formContact{
+     width: 250px;
+     margin: 50px auto;
+    
+}
+ #name, #email, #phone, .butonform{
+     display: block;
+     width: 100%;
+     box-sizing: border-box;
+     border-radius: 0.3rem;
+     border: none;
+     margin: 10px;
+}
+ #name:focus, #email:focus, #phone:focus, .buton:focus{
+     background: #E8BBEF;
+}
+.butonform{
+    background: #F47BFC;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+ .body{
+     font-size: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     background-image:url(https://i.postimg.cc/QxvDzYb1/fundo.png);
+     
+     /*background: linear-gradient(315deg, rgba(244,91,139,1) 0%, rgba(168,91,244,1) 100%, rgba(0,212,255,1) 100%);*/
+}
+ .modal{
+     position: fixed;
+     padding: 0;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(0,0,0,0.5);
+     transform: scale(1.1);
+     opacity: 0;
+     visibility: hidden;
+     transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+     
+}
+.modal-content{
+    background: #C13AC9;
+    padding: 16px 24px;
+    width: 384px;
+    border-radius: 0.6rem;
+    
+}
+.xbuton{
+    float:right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    color: black;
+}
+.xbuton:hover{
+    background-color: darkgray;
+}
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0)
+}
+.title-modal h1::after{
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    align-content: center;    
+}
+.form-descricao{
+    color: #000000;
+    padding: 0px;
+    
+}
+.form-descricao-texto{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: justify;
+}
+.input-form{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+}
+#name::placeholder, #email::placeholder, #phone::placeholder{
+    color: #000000;
+    padding: 6px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.formContact fieldset{  
+     box-sizing: border-box;
+     display: block;
+     width: 100%;
+     border: none;
+     text-align: center;
+}
+
+@media(max-width: 800px){
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.cabecalho-imagem{
+    height: 75px;
+}
+.cabecalho-botao{
+    background: rgb(255, 138, 175);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 180px;
+    height: 50px;
+    margin-top: 15px;
+    align-items: flex-end;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 15px #000000;
+    border: none;
+}
+.conteudo{
+    border-top: 0.6px solid #000000;    
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.conteudo-imagem{
+    height: 250px;
+}
+.conteudo-titulo{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px;
+}
+.conteudo-descricao{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+}
+.conteudo-botao{
+    background: rgb(255, 138, 175);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 15px #000000;
+}
+.conteudo-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+.conteudo-imagem2{
+    height: 450px;
+    align-items: end;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
